@@ -34,7 +34,7 @@ io.on('connection', (socket) => {
         // });
         // socket.broadcast.emit('newMessage', generateMessage(message.from, message.text));
         io.emit('newMessage', generateMessage(message.from, message.text));
-        callback('This is from a server');
+        callback();
     }); 
 
     
